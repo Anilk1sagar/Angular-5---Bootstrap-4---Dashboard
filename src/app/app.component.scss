@@ -1,0 +1,10 @@
+main {
+    padding-left: 260px;
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+    main {
+        padding-left: 0px;
+    }
+}

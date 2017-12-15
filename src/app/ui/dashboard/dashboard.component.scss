@@ -1,0 +1,31 @@
+.post-container {
+    font-size: 14px;
+
+    textarea.post-area {
+        width: 100%;
+        border: 0px;
+        height: 70px;
+    }
+    textarea.post-area:focus {
+        outline: none;
+    }
+
+    i {
+        font-size: 18px;
+    }
+    i:hover {
+        cursor: pointer;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: 599px) {
+    .post-btn {
+        padding: 6px;
+        font-size: 11px;
+    }
+}

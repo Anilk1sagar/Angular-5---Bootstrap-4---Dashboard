@@ -1,0 +1,131 @@
+<aside class="sidebar fixed scrollBar" id="sidebar">
+	<header class="text-center">
+		<div class="brand-logo">
+			<img src="../../assets/angular.png" width="40px" /> Angular
+		</div>
+	</header>
+	<div class="user-logged-in">
+		<div class="content">
+			<div class="user-pic">
+				<img src="../../assets/profile.jpg" class="rounded-circle" width="30%" alt="Profile pic"/>
+			</div>
+			<div class="username">
+				Anil Sagar
+			</div>
+			<div class="user-email">
+				Anilk1sagar@gmail.com
+			</div>
+		</div>
+	</div>
+	<ul class="menu-link">
+		<li>
+			<a routerLink="dashboard" routerLinkActive="active current">
+				<i class="material-icons">bubble_chart</i> Dashboard
+			</a>
+		</li>
+
+		<li>
+			<a routerLink="dashboard" routerLinkActive="current" (click)="rotateArrow('android')" data-toggle="collapse" data-target="#Apps" aria-expanded="false" aria-controls="Apps">
+				<i class="material-icons">android</i> Apps
+				<span class="float-right"><i class="material-icons" name="android" id="dropdown-arrow">arrow_drop_down</i></span>
+			</a>
+			<!-- Sub Menu -->
+			<ul class="menu-link sub-menu collapse" id="Apps">
+				<li>
+					<a routerLink="dashboard" routerLinkActive="current">Todo List</a>
+				</li>
+			</ul>
+		</li>
+
+		<li>
+			<a routerLink="dashboard" routerLinkActive="current" (click)="rotateArrow('components')" data-toggle="collapse" data-target="#Components" aria-expanded="false" aria-controls="Components">
+				<i class="material-icons">dns</i> Components
+				<span class="float-right"><i class="material-icons" name="components">arrow_drop_down</i></span>
+			</a>
+			<!-- Sub Menu -->
+			<ul class="menu-link sub-menu collapse" id="Components">
+				<li>
+					<a routerLink="dashboard" routerLinkActive="current">Alerts</a>
+					<a routerLink="dashboard" routerLinkActive="current">Badge</a>
+					<a routerLink="dashboard" routerLinkActive="current">Buttons</a>
+					<a routerLink="dashboard" routerLinkActive="current">Button group</a>
+					<a routerLink="dashboard" routerLinkActive="current">Card</a>
+					<a routerLink="dashboard" routerLinkActive="current">Carousel</a>
+					<a routerLink="dashboard" routerLinkActive="current">Collapse</a>
+					<a routerLink="dashboard" routerLinkActive="current">Dropdowns</a>
+					<a routerLink="dashboard" routerLinkActive="current">List group</a>
+					<a routerLink="dashboard" routerLinkActive="current">Modal</a>
+					<a routerLink="dashboard" routerLinkActive="current">Navbar</a>
+					<a routerLink="dashboard" routerLinkActive="current">Progress</a>
+				</li>
+			</ul>
+		</li>
+		
+		<li>
+			<a routerLink="dashboard" routerLinkActive="current" (click)="rotateArrow('Forms')" data-toggle="collapse" data-target="#Forms" aria-expanded="false" aria-controls="Forms">
+				<i class="material-icons">radio_button_checked</i> Forms
+				<span class="float-right"><i class="material-icons" name="Forms">arrow_drop_down</i></span>
+			</a>
+			<!-- Sub Menu -->
+			<ul class="menu-link sub-menu collapse" id="Forms">
+				<li>
+					<a routerLink="dashboard" routerLinkActive="current">Basic Forms</a>
+					<a routerLink="dashboard" routerLinkActive="current">Input Group</a>
+					<a routerLink="dashboard" routerLinkActive="current">Reactive form</a>
+					<a routerLink="dashboard" routerLinkActive="current">Validation</a>
+				</li>
+			</ul>
+		</li>
+
+		<li>
+			<a routerLink="dashboard" routerLinkActive="current" (click)="rotateArrow('Table')" data-toggle="collapse" data-target="#Table" aria-expanded="false" aria-controls="Table">
+				<i class="material-icons">list</i> Tables
+				<span class="float-right"><i class="material-icons" name="Table">arrow_drop_down</i></span>
+			</a>
+			<!-- Sub Menu -->
+			<ul class="menu-link sub-menu collapse" id="Table">
+				<li>
+					<a routerLink="dashboard" routerLinkActive="current">Basic tables</a>
+					<a routerLink="dashboard" routerLinkActive="current">Data tables</a>
+				</li>
+			</ul>
+		</li>
+
+		<li>
+			<a routerLink="dashboard" routerLinkActive="current">
+				<i class="material-icons">show_chart</i> Charts
+				<span class="float-right"><i class="material-icons">arrow_drop_down</i></span>
+			</a>
+		</li>
+
+		<li>
+			<a routerLink="dashboard" routerLinkActive="current">
+				<i class="material-icons">navigation</i> Maps
+				<span class="float-right"><i class="material-icons">arrow_drop_down</i></span>
+			</a>
+		</li>
+		
+		<li>
+			<a routerLink="dashboard" routerLinkActive="current" (click)="rotateArrow('pages')" data-toggle="collapse" data-target="#Pages" aria-expanded="false" aria-controls="Apps">
+				<i class="material-icons">description</i> Pages
+				<span class="float-right"><i class="material-icons" name="pages" id="dropdown-arrow">arrow_drop_down</i></span>
+			</a>
+			<!-- Sub Menu -->
+			<ul class="menu-link sub-menu collapse" id="Pages">
+				<li>
+					<a routerLink="dashboard" routerLinkActive="current">Profile</a>
+				</li>
+				<li>
+					<a routerLink="dashboard" routerLinkActive="current">Signin</a>
+				</li>
+				<li>
+					<a routerLink="dashboard" routerLinkActive="current">Signup</a>
+				</li>
+				<li>
+					<a routerLink="dashboard" routerLinkActive="current">Error 404</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</aside>
+
